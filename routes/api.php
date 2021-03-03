@@ -32,3 +32,7 @@ Route::delete('buku', 'BukuController@delete'); //Delete Buku
 
 Route::post('login', 'UserController@login'); //Login
 Route::post('register', 'UserController@register'); //Register
+
+Route::get('keranjang', 'KeranjangController@index');
+Route::post('keranjang', 'KeranjangController@tambah');
+Route::delete('keranjang', 'KeranjangController@hapus');
